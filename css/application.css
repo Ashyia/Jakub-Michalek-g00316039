@@ -1,0 +1,74 @@
+/* Style Sheet used through the code in conjunction with index an application.js */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #0C090A;
+}
+
+canvas {
+    display: block;
+    margin: auto;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#instructions {
+    float: left;
+    font-family: sans-serif;
+    color: #757575;
+}
+
+#score {
+    float: right;
+    color: white;
+    font-size: 2em;
+}
+
+.wrapper {
+    width: 0px;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+
+.key {
+    color: #aaffdd;
+}
+
+/*From Here on it gets interesting, the bottom part is used to center code in the middle of the game */
+#game-finished, #overlayGG {
+    margin: auto;
+    width: 550px;
+    height: 450px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: none;
+}
+
+#overlayGG {
+    background-color: #020000;
+    opacity: .8;
+}
+
+#game-finished {
+    height: 200px;
+    text-align: center;
+    color: white;
+}
+
+#game-finished h1 {
+    font-size: 3em;
+    font-family: sans-serif;
+}
+
+#game-finished button {
+    font-size: 1.5em;
+}

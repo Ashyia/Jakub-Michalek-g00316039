@@ -1,0 +1,38 @@
+<!-- I am legally obliged to attribute parts of the code to James Long under whose Licence can be found in game files, and who inspired this project with a really interesting game blog -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!--Title of the game as well as a notice its done under a company-->
+    <title>GaCo's Drake Warrior</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!--Link to Cascading Style Sheet used within the project-->
+    <link rel="stylesheet" href="css/application.css">
+  </head>
+
+    <body>
+        <div id="overlayGG">
+        </div>
+        <!--when game is over the below message will be displayed with a button to allow user to restart it as well as reduce additional enemy spawns to starting point0 -->
+        <div id="game-finished">
+          <h1>You Lost!</h1>
+            <h2>The kingdom was overrun by great bat plague</h2>
+          <button id="try-again">Try Again</button>
+        </div>
+        <!--wrapper is used to place score in appropriate location-->
+        <div class="wrapper">
+          <div id="score"></div>
+        </div>
+
+        <!--Scripts used in conjunction with application CSS control game logic from different modules, main one being application.js which has the majority of calculations-->
+        <script type="text/javascript" 
+                src="js/resources.js"></script>
+        <script type="text/javascript" 
+                src="js/userInput.js"></script>
+        <script type="text/javascript" 
+                src="js/sprites.js"></script>
+        <script type="text/javascript" 
+                src="js/application.js"></script>
+    </body>
+</html>
